@@ -15,7 +15,7 @@
   \***************************/
 /***/ (() => {
 
-eval("const butInstall = document.getElementById('buttonInstall');\n\nwindow.addEventListener('beforeinstallprompt', (event) => {\n    window.deferredPrompt = event;\n    installBtn.classList.toggle('hidden', false);\n});\n\ninstallBtn.addEventListener('click', async () => {\n    const promptEvent = window.deferredPrompt;\n\n    if (!promptEvent) {\n        return;\n    }\n\n    promptEvent.prompt();\n    window.deferredPrompt = null;\n    installBtn.classList.toggle('hidden', true);\n});\n\nwindpw.addEventListener('appinstalled', (event) => {\n    window.deferredPrompt = null;\n});\n\n//# sourceURL=webpack://JATE/./src/js/install.js?");
+eval("const butInstall = document.getElementById('buttonInstall');\n\nwindow.addEventListener('beforeinstallprompt', (event) => {\n    window.deferredPrompt = event;\n    installBtn.classList.toggle('hidden', false);\n});\n\ninstallBtn.addEventListener('click', async () => {\n    const promptEvent = window.deferredPrompt;\n\n    if (!promptEvent) {\n        return;\n    }\n\n    promptEvent.prompt();\n    window.deferredPrompt = null;\n    installBtn.classList.toggle('hidden', true);\n});\n\nwindpw.addEventListener('appinstalled', (event) => {\n    window.deferredPrompt = null;\n});\n\n//# sourceURL=webpack://jate/./src/js/install.js?");
 
 /***/ })
 
